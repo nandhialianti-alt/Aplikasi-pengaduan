@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #ff69b4;
+    /* Hot Pink */
+    --secondary-color: #ff1493;
+    /* Deep Pink */
+    --success-color: #f06292;
+    --info-color: #f8bbd0;
+    --warning-color: #f48fb1;
+    --danger-color: #ad1457;
+    --dark-color: #880e4f;
+    --light-bg: #fff5f8;
+    --card-shadow: 0 0.5rem 2rem 0 rgba(255, 105, 180, 0.15);
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: var(--dark-color);
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--danger-color));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.login-body {
+    padding: 3rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--primary-color) 10%, var(--danger-color) 100%);
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0.5rem;
+    margin: 5px 15px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.main-content {
+    background-color: var(--light-bg);
+}
+
+.topbar {
+    background-color: white;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .1);
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.card-dashboard {
+    border: none;
+    border-radius: 0.75rem;
+    border-left: 0.25rem solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+}
+
+.card-dashboard.border-success {
+    border-left-color: var(--success-color);
+}
+
+.card-dashboard.border-info {
+    border-left-color: var(--info-color);
+}
+
+.card-dashboard.border-warning {
+    border-left-color: var(--warning-color);
+}
+
+.table-modern thead th {
+    background-color: #fff8fb;
+    border-bottom: 2px solid #fce4ec;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* Bootstrap Overrides */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--info-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--success-color) !important;
+}
+
+.text-success {
+    color: var(--success-color) !important;
+}
+
+.btn-success {
+    background-color: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+}
+
+.bg-info {
+    background-color: var(--info-color) !important;
+}
+
+.text-info {
+    color: var(--info-color) !important;
+}
+
+.bg-warning {
+    background-color: var(--warning-color) !important;
+}
+
+.text-warning {
+    color: var(--warning-color) !important;
+}
+
+.bg-danger {
+    background-color: var(--danger-color) !important;
+}
+
+.text-danger {
+    color: var(--danger-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.alert-primary,
+.alert-success,
+.alert-danger,
+.alert-info,
+.alert-warning {
+    background-color: #fff1f6 !important;
+    border-color: #f8bbd0 !important;
+    color: #ad1457 !important;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.badge.bg-light {
+    background-color: #fff1f6 !important;
+    color: var(--primary-color) !important;
+    border: 1px solid #f8bbd0 !important;
+}
