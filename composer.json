@@ -1,0 +1,8 @@
+{
+    "name": "nandhia/pengaduan-sekolah",
+    "description": "Aplikasi Pengaduan Sarana Sekolah",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    }
+}

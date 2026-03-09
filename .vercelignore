@@ -1,0 +1,9 @@
+.git
+database.sql
+implementation_plan.md
+dokumentasi.md
+README.md
+assets/img/raw/
+*.log
+.vscode/
+.antigravity/
