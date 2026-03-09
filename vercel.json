@@ -1,32 +1,11 @@
+```json
 {
-    "functions": {
-        "*.php": {
-            "runtime": "vercel-php@0.7.1"
-        },
-        "modules/**/*.php": {
-            "runtime": "vercel-php@0.7.1"
-        }
-    },
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/index.php"
-        },
-        {
-            "src": "/login",
-            "dest": "/login.php"
-        },
-        {
-            "src": "/register",
-            "dest": "/register.php"
-        },
-        {
-            "src": "/logout",
-            "dest": "/logout.php"
-        },
-        {
-            "src": "/(.*).php",
-            "dest": "/$1.php"
-        }
-    ]
+    "dest": "/logout.php"
+},
+{
+    "src": "/(.*).php",
+    "dest": "/$1.php"
 }
+]
+}
+```
